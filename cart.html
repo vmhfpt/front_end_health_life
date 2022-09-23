@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="./public/responsive/contact.css">
     <link rel="stylesheet" type="text/css" href="./public/responsive/postdetail.css">
     <link rel="stylesheet" type="text/css" href="./public/responsive/user.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/cart.css">
+    <link rel="stylesheet" type="text/css" href="./public/responsive/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="./public/carousel/dist/assets/owl.carousel.min.css">
@@ -28,10 +30,10 @@
 
 <body>
    
+   
     <div class="over-layer">
 
     </div>
-
     <header>
         <section class="top-bar container-fluid">
             <div class="container">
@@ -241,67 +243,138 @@
 
         <section class="app-poster container-fluid">
             <div class="container">
-                <h1>ĐĂNG NHẬP TÀI KHOẢN</h1>
+                <h1>GIỎ HÀNG</h1>
                 <ul class="app-poster__breadcrumb">
                     <li><a href="">Trang chủ</a></li>
-                    <li>/<a class="app-poster__breadcrumb-active" href=""> Đăng nhập tài khoản</a></li>
+                    <li>/<a class="app-poster__breadcrumb-active" href="">Giỏ hàng</a></li>
                 </ul>
             </div>
         </section>
-     
-        <section class="app-login container-fluid">
-            <div class="container">
-               <div class="row">
-                    <div class="col">
-                       <div class="app-login__form">
-                            <div class="app-login__with-system">
-                                <span class="app-login__with-system-title">đăng nhập tài khoản</span>
-                                <span class="app-login__with-system-alert">Nếu bạn đã có tài khoản, đăng nhập tại đây</span>
-                                <div class="app-login__form-detail">
-                                    <label> Email:</label>
-                                    <input type="email" placeholder="Email" />
-                                </div>
-                                <div class="app-login__form-detail">
-                                    <label> Mật khẩu:</label>
-                                    <input type="password" placeholder="Mật khẩu" />
-                                </div>
-                                <div class="app-login_form-submit">
-                                     <button>Đăng nhập</button>
-                                     <span> <a href=""> Đăng ký</a></span>
-                                </div>
-                            </div>
-                            <div class="app-login__with-socialite">
-                                 <span> Hoặc đăng nhập bằng</span>
-                                 <div class="app-login__with-socialite-icon">
-                                   <a href="">
-                                    <img src="https://bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg" alt="" />
-                                   </a>
-                                   <a href="">
-                                    <img src="https://bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg" alt="" />
-                                   </a>
-                                    
-                                 </div>
-                            </div>
-                       </div>
-                       
-                    </div>
-                    <div class="col">
-                       <div class="app-login__forgot-password">
-                       <div class="app-login__forgot-password-title">
-                        <span> Bạn quên mật khẩu? Nhập địa chỉ email để lấy lại mật khẩu qua email.</span>
-                       </div>
-                        <div class="app-login__form-detail">
-                            <label> Email:</label>
-                            <input type="email" placeholder="Email" />
-                        </div>
-                        <div class="btn-forgot app-login_form-submit">
-                            <button>Lấy lại mật khẩu</button>     
-                       </div>
+        <section class="app-cart container-fluid">
+          <div class="container">
+             <div class="tr-body-cart">
+                <div class="tr-table tr-table-image">Sản phẩm</div>
+                   <div class="tr-table tr-table-name">Thông tin sản phẩm</div>
+                   <div class="tr-table tr-table-price">Đơn giá</div>
+                <div class="tr-table tr-table-quantity">Số lượng</div>
+                <div class="tr-table tr-table-total">Thành tiền</div>
+                <div class="tr-table tr-table-delete">Xóa</div>
+                 <div class="clear-fix"></div>
+             </div>
+             <span class="title-cart-mobile"> GIỎ HÀNG CỦA BẠN</span>
+             <div class="tbody-cart">
+                 <div class="tbody-cart-item">
+                   
+                   <div class="cart-detail-left">
+                    <div class="tr-table tr-table-image"><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/6-2a9b9f54-6377-485d-b3d2-f936f1ec18c9.jpg"  alt=""/></div>
+                      <div class="app-cart-detail-right-table">
+                        <div class="tr-table tr-table-name tbody-name"><a href=""><span>Thực Phẩm Chức Năng Dầu Nhuyễn Thể</span></a></div>
+                         <div class="tr-table tr-table-price tbody-name-price"><span class="price-tbody-responsive">Giá:</span>90.000₫</div>
+                      </div>
+                   </div>
+                  <div class="cart-detail-right">
+                    <div class="tr-table tr-table-quantity"> <button>-</button><input value="1" type="number"/><button>+</button></div>
+                <div class="tr-table tr-table-total tbody-name-price cart-price-total">90.000₫</div>
+                <div class="tr-table tr-table-delete"><i class="fa fa-remove"></i></div>
+                  </div>
+                <div class="clear-fix"></div>
+                 </div>
+                 <div class="tbody-cart-item">
+                   
+                    <div class="cart-detail-left">
+                     <div class="tr-table tr-table-image"><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/6-2a9b9f54-6377-485d-b3d2-f936f1ec18c9.jpg"  alt=""/></div>
+                       <div class="app-cart-detail-right-table">
+                         <div class="tr-table tr-table-name tbody-name"><a href=""><span>Thực Phẩm Chức Năng Dầu Nhuyễn Thể</span></a></div>
+                          <div class="tr-table tr-table-price tbody-name-price"><span class="price-tbody-responsive">Giá:</span>90.000₫</div>
                        </div>
                     </div>
-               </div>
-            </div>
+                   <div class="cart-detail-right">
+                     <div class="tr-table tr-table-quantity"> <button>-</button><input value="1" type="number"/><button>+</button></div>
+                 <div class="tr-table tr-table-total tbody-name-price cart-price-total">90.000₫</div>
+                 <div class="tr-table tr-table-delete"><i class="fa fa-remove"></i></div>
+                   </div>
+                 <div class="clear-fix"></div>
+                  </div>
+                  <div class="tbody-cart-item">
+                   
+                    <div class="cart-detail-left">
+                     <div class="tr-table tr-table-image"><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/6-2a9b9f54-6377-485d-b3d2-f936f1ec18c9.jpg"  alt=""/></div>
+                       <div class="app-cart-detail-right-table">
+                         <div class="tr-table tr-table-name tbody-name"><a href=""><span>Thực Phẩm Chức Năng Dầu Nhuyễn Thể</span></a></div>
+                          <div class="tr-table tr-table-price tbody-name-price"><span class="price-tbody-responsive">Giá:</span>90.000₫</div>
+                       </div>
+                    </div>
+                   <div class="cart-detail-right">
+                     <div class="tr-table tr-table-quantity"> <button>-</button><input value="1" type="number"/><button>+</button></div>
+                 <div class="tr-table tr-table-total tbody-name-price cart-price-total">90.000₫</div>
+                 <div class="tr-table tr-table-delete"><i class="fa fa-remove"></i></div>
+                   </div>
+                 <div class="clear-fix"></div>
+                  </div>
+                  <div class="tbody-cart-item">
+                   
+                    <div class="cart-detail-left">
+                     <div class="tr-table tr-table-image"><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/6-2a9b9f54-6377-485d-b3d2-f936f1ec18c9.jpg"  alt=""/></div>
+                       <div class="app-cart-detail-right-table">
+                         <div class="tr-table tr-table-name tbody-name"><a href=""><span>Thực Phẩm Chức Năng Dầu Nhuyễn Thể</span></a></div>
+                          <div class="tr-table tr-table-price tbody-name-price"><span class="price-tbody-responsive">Giá:</span>90.000₫</div>
+                       </div>
+                    </div>
+                   <div class="cart-detail-right">
+                     <div class="tr-table tr-table-quantity"> <button>-</button><input value="1" type="number"/><button>+</button></div>
+                 <div class="tr-table tr-table-total tbody-name-price cart-price-total">90.000₫</div>
+                 <div class="tr-table tr-table-delete"><i class="fa fa-remove"></i></div>
+                   </div>
+                 <div class="clear-fix"></div>
+                  </div>
+                  <div class="tbody-cart-item">
+                   
+                    <div class="cart-detail-left">
+                     <div class="tr-table tr-table-image"><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/6-2a9b9f54-6377-485d-b3d2-f936f1ec18c9.jpg"  alt=""/></div>
+                       <div class="app-cart-detail-right-table">
+                         <div class="tr-table tr-table-name tbody-name"><a href=""><span>Thực Phẩm Chức Năng Dầu Nhuyễn Thể</span></a></div>
+                          <div class="tr-table tr-table-price tbody-name-price"><span class="price-tbody-responsive">Giá:</span>90.000₫</div>
+                       </div>
+                    </div>
+                   <div class="cart-detail-right">
+                     <div class="tr-table tr-table-quantity"> <button>-</button><input value="1" type="number"/><button>+</button></div>
+                 <div class="tr-table tr-table-total tbody-name-price cart-price-total">90.000₫</div>
+                 <div class="tr-table tr-table-delete"><i class="fa fa-remove"></i></div>
+                   </div>
+                 <div class="clear-fix"></div>
+                  </div>
+                
+                
+                 
+             </div>
+          </div>
         </section>
+        <section class="app-cart-total-paying container-fluid">
+             <div class="container">
+                <div class="row">
+                     <div class="col">
+                        <div class="app-cart-total-paying__right">
+                            <b>1.980.000₫</b>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="app-cart-total-paying__left">
+                            <span>Tổng tiền :</span>
+                         </div>
+                       
+                     </div>
+                </div>
+             </div>
+        </section>
+        <section class="app-cart-paying-cart container-fluid">
+            <div class="container">
+                <div class="app-cart-paying-cart__button">
+                       <button><a href="">Tiếp tục mua hàng</a></button>
+                       <button><a href=""> Tiến hành đặt hàng</a></button>
+                </div>
+            </div>
+       </section>
+        
     </main>
     <footer>
         <div class="call-icon">

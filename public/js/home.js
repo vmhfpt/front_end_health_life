@@ -37,6 +37,12 @@ $(document).ready(function () {
     $(".owl-carousel").owlCarousel();
     
 });
+
+$(".icon-back-to-top").click(function () {
+
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+});
+
 $('.display-menu').click(function(){
     $('.top-nav__list').css('display', 'block');
     $('.over-layer').css('display', 'block');
@@ -76,3 +82,12 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+        $('.icon-back-to-top').fadeIn();
+    } else {
+        $('.icon-back-to-top').fadeOut();
+    }
+}); 

@@ -34,14 +34,16 @@
     z-index: 1000;
     float : none;
     width : 245px;
-    padding-right : 15px;
+    padding-right : 35px;
+    
     border : 1px solid rgb(226, 226, 226);
    }
    .content-detail-category__suggest-over-flow {
      overflow-x: auto;
      height : 100vh;
      width : 100%;
-     padding : 15px;
+     padding : 15px ;
+     
    }
    .content-detail-category__suggest-product-content {
    

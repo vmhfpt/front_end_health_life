@@ -1,6 +1,8 @@
 @media only screen and (max-width: 1195px) {
    
-   
+  .call-icon {
+    display: block;
+   }
    
     .container {
         width : 940px;
@@ -360,6 +362,7 @@
    .carousel-header__image-left {
     width : 100%;
    }
+   
    .carousel-header__img {
     height : 285px;
    }

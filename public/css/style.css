@@ -8,6 +8,42 @@ body {
   
     font-family: "Roboto","HelveticaNeue","Helvetica Neue",sans-serif;
 }
+.carousel-header__detail-center-post i {
+    color :#fff;
+}
+.carousel-header__detail-post i {
+    color : #fff;
+}
+.call-icon i {
+  background: #9ac100;
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+    padding : 2px 14px;
+    border-radius: 100%;
+}
+.call-icon {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    left : 25px;
+    width : 50px;
+    
+    z-index: 999;
+}
+.icon-back-to-top {
+    width : 25px;
+    background:#333;
+}
+.icon-back-to-top {
+    display: none;
+    z-index: 999;
+    position: fixed;
+    right : 25px;
+    bottom: 85px;
+    border-radius: 100%;
+  padding : 13px 10px 13px 15px;
+}
 .detail-introduce-content {
     padding-left : 15px;
 }
