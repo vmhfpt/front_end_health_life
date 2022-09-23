@@ -2,16 +2,49 @@
     padding: 0;
     margin : 0;
 }
+
 body {
+   
+  
     font-family: "Roboto","HelveticaNeue","Helvetica Neue",sans-serif;
 }
+.detail-introduce-content {
+    padding-left : 15px;
+}
+.detail-introduce-content__suggest-list li {
+    width : 95%;
+}
+.owl-carousel-col-response {
+  
+    width : 100% !important;
+}
+.icon-nav-menu {
+    width: 30px;
+    
+}
+.over-layer, .over-layer-filter {
+    display: none;
+    justify-content: center;
+    z-index: 1000;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    background: rgba(0, 0, 0, 0.358);
+}
 .container {
-    width : 60%;
+    width : 1145px;
    
 }
 .container-fluid {
     width : 100%;
     
+}
+.display-menu {
+    cursor: pointer;
 }
 .top-bar {
     display: flex;
@@ -19,6 +52,9 @@ body {
     justify-content: center;
     height : 41px;
     background: #9ac100;
+}
+.home-li {
+    list-style: none !important;
 }
 .top-bar__contact {
     float : left;
@@ -67,6 +103,7 @@ body {
     width : 100%;
 }
 .top-nav__list {
+    display: block ;
     float : left;
 
 }
@@ -510,7 +547,9 @@ body {
     float : left;
    
 }
-
+.top-nav__list-mobile {
+    display : none;
+}
 .custom-margin {
     margin-right : 20px;
 }
@@ -523,9 +562,16 @@ body {
     position: relative;
 }
 .category-health__image-main img {
-    max-width :324px !important;
-    max-height: 200px !important;
+   width :324px ;
+   height: 200px ;
 }
+.icon-nav-menu {
+    display : none;
+   
+   }
+   .active-li-home {
+    display : none;
+   }
 .category-health__image-main span {
     position: absolute;
     top : 0px;
@@ -560,6 +606,7 @@ body {
     max-height: 100% !important;
     float : left;
     margin-right : 12px;
+    
    
 }
 .category-health__post-content {
@@ -769,9 +816,12 @@ display: block;
     color :#9ac100;
 }
 .foods__products-item-image {
-    background: #9ac100;
+   
     width : 100%;
     height : 130px;
+}
+.logo-center {
+    position: relative;
 }
 .foods__products-item-content {
     text-align: center;
@@ -1060,7 +1110,7 @@ display: block;
     transition: transform .3s ease-out;
     transform: translate(0, 0);
     background: white;
-    width : 48%;
+    width : 914px;
     height: 579px;
     margin-top : 30px;
     border-radius: 5px;
@@ -1069,7 +1119,7 @@ display: block;
     transition: transform .3s ease-out;
     transform: translate(0, 0);
     background: white;
-    width : 22.2%;
+    width : 420px;
     height: 382px;
     margin-top : 30px;
   

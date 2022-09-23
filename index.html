@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./public/responsive/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Change from vs code</title>
     <link rel="stylesheet" href="./public/carousel/dist/assets/owl.carousel.min.css">
@@ -14,6 +15,9 @@
 </head>
 
 <body>
+    <div class="over-layer">
+
+    </div>
     <div class="show-detail-eye-popup-success">
         <div class="show-detail-eye-success-add">
             <div class="show-detail__add-cart ">
@@ -119,13 +123,22 @@
                 </div>
             </div>
         </section>
-        <section class="top-banner">
+       <section class="top-banner">
 
             <div class="container">
                 <div class="row">
+                    <div class="col ">
+                        <div class="icon-nav-menu">
+                            <img  class="display-menu" src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/menu-bar.png?1650440356297"  alt=""/>
+                        </div>
+
+                      
+                    </div>
                     <div class="col">
+                       <div class="logo-center">
                         <img src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/logo.png?1650440356297"
-                            alt="" class="top-banner__logo" />
+                        alt="" class="top-banner__logo" />
+                       </div>
                     </div>
                     <div class="col">
                         <img src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/banner-top.jpg?1650440356297"
@@ -140,9 +153,24 @@
                 <div class="row">
                     <div class="col">
                         <ul class="top-nav__list">
-                            <li><a class="active-li" href="">Trang chủ </a></li>
+                            <div class="top-nav__list-mobile">
+                                <div class="top-nav__list-mobile-close">
+                                    <button ><i class="fa fa-close"></i></button>
+                                </div>
+                            
+                                <div class="top-nav__list-mobile-user">
+                                    <i class="fa fa-user"></i> <a href=""> Đăng nhập </a><span>hoặc</span><a href="">Đăng ký</a>
+                                </div>
+                                <div class="top-nav__list-mobile-search">
+                                        <input type="text" placeholder="Tìm sản phẩm">
+                                        <button><a href=""> <i class="fa fa-search"></i></a></button>
+                                </div>
+                            </div>
+
+                            <li class="active-li-home"><a class="active-li-home" href="#">Menu</a></li>
+                            <li class="home-li"><a class="active-li" href="">Trang chủ </a></li>
                             <li><a href="">Giới thiệu </a></li>
-                            <li><a href=""> Sản phẩm <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                            <li><a href="#"> Sản phẩm <i class="fa fa-angle-right" data-toggle="dropdown"></i>
                                     <ul class="top-nav__list-child">
                                         <li> <a href="">Giảm cân</a></li>
                                         <li> <a href="">Bủ sung dinh dưỡng</a></li>
@@ -151,7 +179,7 @@
                                         <li> <a href="">Sản phẩm chức năng</a></li>
                                     </ul>
                                 </a></li>
-                            <li><a href=""> Kiến thức <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                            <li><a href="#"> Kiến thức <i class="fa fa-angle-right" data-toggle="dropdown"></i>
                                     <ul class="top-nav__list-child">
                                         <li> <a href="">Tiểu đường</a></li>
                                         <li> <a href="">Nhiễm trùng</a></li>
@@ -175,11 +203,13 @@
                     <div class="col">
                         <div class="top-nav__cart">
                            <div class="top-nav__cart_hover">
+                           <a href="">
                             <div class="top-nav__icon-cart">
                                 <img alt="icon"
                                     src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/icon-cart.png?1650440356297">
                                 <span class="top-nav__quantity-cart"> 6</span>
                             </div>
+                           </a>
                             <div class="top-nav__content-cart">
                                 <span> GIỎ HÀNG</span>
                                 <span> (6) sản phẩm</span>
@@ -304,8 +334,9 @@
         </section>
         <section class="carousel-header">
             <div class="container">
-                <div class="row">
-                    <div class="col">
+                <div class="row carousel-position">
+                    <div class="response-position-carousel"></div>
+                   <div class="col">
                         <div class="carousel-header__image-left">
                             <div style="background-image: url('https://bizweb.dktcdn.net/thumb/large/100/299/769/articles/blog3.jpg?v=1521707417623');"
                                 class="carousel-header__img">
@@ -336,11 +367,12 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
-
+                          
                     </div>
 
-                    <div class="col">
+                    <div class="col owl-carousel-col-response">
                         <div class="carousel-header__content owl-carousel">
                             <div style="background-image: url('https://bizweb.dktcdn.net/thumb/large/100/299/769/articles/blog9-f14374b5-46de-446e-a87c-eb1ef54c4f15.jpg?v=1521707271393');"
                                 class="carousel-header__center ">
@@ -387,7 +419,7 @@
                         </div>
 
                     </div>
-                    <div class="col">
+                <div class="col">
                         <div class="carousel-header__image-right">
                             <div style="background-image: url('https://bizweb.dktcdn.net/thumb/large/100/299/769/articles/blog9-f14374b5-46de-446e-a87c-eb1ef54c4f15.jpg?v=1521707271393');"
                                 class="carousel-header__img">
@@ -418,11 +450,15 @@
                                     </div>
                                 </div>
                             </div>
+                             <div class="clear-fix"></div>
                         </div>
                     </div>
+                 
                 </div>
             </div>
+            
         </section>
+       
         <section class="category-health container-fluid">
             <div class="container">
                 <div class="category-health__title">
@@ -611,7 +647,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="category-health__carousel ">
+                        <div class="category-health__carousel display-none-mobile">
                             <div class="owl-carousel">
                                 <div class="category-health__carousel-content ">
                                     <div class="category-health__image-main">
@@ -702,7 +738,8 @@
                 </div>
             </div>
         </section>
-        <section class="information-health container-fluid">
+       
+         <section class="information-health container-fluid">
             <div class="container">
                 <div class="category-health__title">
                     <center> <img class="category-health_title_icon"
@@ -784,7 +821,9 @@
                 </div>
             </div>
         </section>
-        <section class="foods container-fluid">
+       
+       
+         <section class="foods container-fluid">
             <div class="container">
                 <div class="category-health__title">
                     <center> <img class="category-health_title_icon"
@@ -963,13 +1002,15 @@
                 </div>
             </div>
         </section>
+       
         <section class="banner-foods">
             <div class="container">
                 <img src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/bannerngang.jpg?1650440356297"
                     alt="" class="banner-foods__img" />
             </div>
         </section>
-        <section class="suggest-product">
+       
+         <section class="suggest-product">
             <div class="container">
                 <div class="category-health__title">
                     <center> <img class="category-health_title_icon"
@@ -1115,6 +1156,7 @@
                 </div>
             </div>
         </section>
+       
         <section class="policy-footer">
             <div class="container">
                 <div class="row">
@@ -1178,7 +1220,8 @@
         </section>
         
     </main>
-    <footer>
+   
+     <footer>
         <section class="app-footer container-fluid">
             <div class="container">
                 <div class="row">
@@ -1235,6 +1278,7 @@
             </div>
         </section>
     </footer>
+   
   
     <script src="./public/carousel/dist/owl.carousel.min.js"></script>
     <script src="./public/js/home.js"> </script>

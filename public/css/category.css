@@ -36,6 +36,16 @@
     border-bottom : none;
    
 }
+.button-display-category {
+    display: none;
+    
+}
+.app-category-content-left-close {
+    display: none;
+}
+.app-category-content__list-brand-search input:focus {
+    outline: none;
+}
 .app-category-content__list-category a{
     color : #fff; 
 }

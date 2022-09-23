@@ -37,7 +37,18 @@ $(document).ready(function () {
     $(".owl-carousel").owlCarousel();
     
 });
-
+$('.display-menu').click(function(){
+    $('.top-nav__list').css('display', 'block');
+    $('.over-layer').css('display', 'block');
+})
+$('.top-nav__list-mobile-close').click(function() {
+    $('.top-nav__list').css('display', 'none');
+    $('.over-layer').css('display', 'none');
+})
+$('.over-layer').click(function() {
+    $('.top-nav__list').css('display', 'none');
+    $('.over-layer').css('display', 'none');
+})
 $('.owl-carousel').owlCarousel({
     items: 1,
     margin: 10,

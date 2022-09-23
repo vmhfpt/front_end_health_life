@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="./public/css/new.css">
     <link rel="stylesheet" type="text/css" href="./public/css/contact.css">
     <link rel="stylesheet" type="text/css" href="./public/css/postdetail.css">
+    <link rel="stylesheet" type="text/css" href="./public/responsive/index.css">
+    <link rel="stylesheet" type="text/css" href="./public/responsive/category.css">
+    <link rel="stylesheet" type="text/css" href="./public/responsive/detail.css">
+    <link rel="stylesheet" type="text/css" href="./public/responsive/new.css">
+    <link rel="stylesheet" type="text/css" href="./public/responsive/contact.css">
+    <link rel="stylesheet" type="text/css" href="./public/responsive/postdetail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="./public/carousel/dist/assets/owl.carousel.min.css">
@@ -20,7 +26,9 @@
 
 <body>
    
-   
+    <div class="over-layer">
+
+    </div>
 
     <header>
         <section class="top-bar container-fluid">
@@ -40,13 +48,22 @@
                 </div>
             </div>
         </section>
-        <section class="top-banner">
+       <section class="top-banner">
 
             <div class="container">
                 <div class="row">
+                    <div class="col ">
+                        <div class="icon-nav-menu">
+                            <img  class="display-menu" src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/menu-bar.png?1650440356297"  alt=""/>
+                        </div>
+
+                      
+                    </div>
                     <div class="col">
+                       <div class="logo-center">
                         <img src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/logo.png?1650440356297"
-                            alt="" class="top-banner__logo" />
+                        alt="" class="top-banner__logo" />
+                       </div>
                     </div>
                     <div class="col">
                         <img src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/banner-top.jpg?1650440356297"
@@ -61,9 +78,24 @@
                 <div class="row">
                     <div class="col">
                         <ul class="top-nav__list">
-                            <li><a class="active-li" href="">Trang chủ </a></li>
+                            <div class="top-nav__list-mobile">
+                                <div class="top-nav__list-mobile-close">
+                                    <button ><i class="fa fa-close"></i></button>
+                                </div>
+                            
+                                <div class="top-nav__list-mobile-user">
+                                    <i class="fa fa-user"></i> <a href=""> Đăng nhập </a><span>hoặc</span><a href="">Đăng ký</a>
+                                </div>
+                                <div class="top-nav__list-mobile-search">
+                                        <input type="text" placeholder="Tìm sản phẩm">
+                                        <button><a href=""> <i class="fa fa-search"></i></a></button>
+                                </div>
+                            </div>
+
+                            <li class="active-li-home"><a class="active-li-home" href="#">Menu</a></li>
+                            <li class="home-li"><a class="active-li" href="">Trang chủ </a></li>
                             <li><a href="">Giới thiệu </a></li>
-                            <li><a href=""> Sản phẩm <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                            <li><a href="#"> Sản phẩm <i class="fa fa-angle-right" data-toggle="dropdown"></i>
                                     <ul class="top-nav__list-child">
                                         <li> <a href="">Giảm cân</a></li>
                                         <li> <a href="">Bủ sung dinh dưỡng</a></li>
@@ -72,7 +104,7 @@
                                         <li> <a href="">Sản phẩm chức năng</a></li>
                                     </ul>
                                 </a></li>
-                            <li><a href=""> Kiến thức <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                            <li><a href="#"> Kiến thức <i class="fa fa-angle-right" data-toggle="dropdown"></i>
                                     <ul class="top-nav__list-child">
                                         <li> <a href="">Tiểu đường</a></li>
                                         <li> <a href="">Nhiễm trùng</a></li>
@@ -95,120 +127,107 @@
                     </div>
                     <div class="col">
                         <div class="top-nav__cart">
-                            <div class="top-nav__cart_hover">
-                                <div class="top-nav__icon-cart">
-                                    <img alt="icon"
-                                        src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/icon-cart.png?1650440356297">
-                                    <span class="top-nav__quantity-cart"> 6</span>
-                                </div>
-                                <div class="top-nav__content-cart">
-                                    <span> GIỎ HÀNG</span>
-                                    <span> (6) sản phẩm</span>
-                                </div>
-                                <div class="shopping-cart">
-                                    <div class="shopping-cart__list-item">
-                                        <div class="shopping-cart__item">
-                                            <div class="shopping-cart__image">
-                                                <a href=""><img
-                                                        src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg"
-                                                        alt="" /></a>
-                                            </div>
-                                            <div class="shopping-cart__content">
-                                                <a href=""><span> Thực phẩm chức năng Milaganics </span> </a>
-                                                <a href="javascript:;" title="Xóa"
-                                                    class="remove-item-cart fa fa-remove">&nbsp;</a>
-                                                <b> 350.000₫</b>
-                                                <div class="shopping-cart__content-quantity">
-                                                    <button>+</button><input value="1" /><button>-</button>
-                                                </div>
-                                            </div>
-                                            <div class="clear-fix"></div>
-                                        </div>
-                                        <div class="shopping-cart__item">
-                                            <div class="shopping-cart__image">
-                                                <a href=""><img
-                                                        src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg"
-                                                        alt="" /></a>
-                                            </div>
-                                            <div class="shopping-cart__content">
-                                                <a href=""><span> Thực phẩm chức năng Milaganics </span> </a>
-                                                <a href="javascript:;" title="Xóa"
-                                                    class="remove-item-cart fa fa-remove">&nbsp;</a>
-                                                <b> 350.000₫</b>
-                                                <div class="shopping-cart__content-quantity">
-                                                    <button>+</button><input value="1" /><button>-</button>
-                                                </div>
-                                            </div>
-                                            <div class="clear-fix"></div>
-                                        </div>
-                                        <div class="shopping-cart__item">
-                                            <div class="shopping-cart__image">
-                                                <a href=""><img
-                                                        src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg"
-                                                        alt="" /></a>
-                                            </div>
-                                            <div class="shopping-cart__content">
-                                                <a href=""><span> Thực phẩm chức năng Milaganics </span> </a>
-                                                <a href="javascript:;" title="Xóa"
-                                                    class="remove-item-cart fa fa-remove">&nbsp;</a>
-                                                <b> 350.000₫</b>
-                                                <div class="shopping-cart__content-quantity">
-                                                    <button>+</button><input value="1" /><button>-</button>
-                                                </div>
-                                            </div>
-                                            <div class="clear-fix"></div>
-                                        </div>
-                                        <div class="shopping-cart__item">
-                                            <div class="shopping-cart__image">
-                                                <a href=""><img
-                                                        src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg"
-                                                        alt="" /></a>
-                                            </div>
-                                            <div class="shopping-cart__content">
-                                                <a href=""><span> Thực phẩm chức năng Milaganics </span> </a>
-                                                <a href="javascript:;" title="Xóa"
-                                                    class="remove-item-cart fa fa-remove">&nbsp;</a>
-                                                <b> 350.000₫</b>
-                                                <div class="shopping-cart__content-quantity">
-                                                    <button>+</button><input value="1" /><button>-</button>
-                                                </div>
-                                            </div>
-                                            <div class="clear-fix"></div>
-                                        </div>
-                                        <div class="shopping-cart__item">
-                                            <div class="shopping-cart__image">
-                                                <a href=""><img
-                                                        src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg"
-                                                        alt="" /></a>
-                                            </div>
-                                            <div class="shopping-cart__content">
-                                                <a href=""><span> Thực phẩm chức năng Milaganics </span> </a>
-                                                <a href="javascript:;" title="Xóa"
-                                                    class="remove-item-cart fa fa-remove">&nbsp;</a>
-                                                <b> 350.000₫</b>
-                                                <div class="shopping-cart__content-quantity">
-                                                    <button>+</button><input value="1" /><button>-</button>
-                                                </div>
-                                            </div>
-                                            <div class="clear-fix"></div>
-                                        </div>
-                                    </div>
-                                    <div class="shopping-cart__total-cart">
-                                        <div class="shopping-cart__total-detail">
-                                            <span> Tổng cộng</span>
-                                            <b>860.000₫</b>
-                                            <div class="clear-fix"></div>
-                                        </div>
-
-                                    </div>
-                                    <div class="shopping-cart__button">
-                                        <button> <a href=""> Giỏi hàng</a></button>
-                                        <button> <a href=""> Thanh toán</a></button>
-                                    </div>
-                                </div>
-
+                           <div class="top-nav__cart_hover">
+                           <a href="">
+                            <div class="top-nav__icon-cart">
+                                <img alt="icon"
+                                    src="https://bizweb.dktcdn.net/100/299/769/themes/853094/assets/icon-cart.png?1650440356297">
+                                <span class="top-nav__quantity-cart"> 6</span>
                             </div>
+                           </a>
+                            <div class="top-nav__content-cart">
+                                <span> GIỎ HÀNG</span>
+                                <span> (6) sản phẩm</span>
+                            </div>
+                            <div class="shopping-cart">
+                                <div class="shopping-cart__list-item">
+                                  <div class="shopping-cart__item">
+                                      <div class="shopping-cart__image">
+                                        <a href=""><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg" alt="" /></a> 
+                                      </div>
+                                      <div class="shopping-cart__content">
+                                         <a href=""><span> Thực phẩm chức năng  Milaganics </span> </a>  
+                                           <a href="javascript:;" title="Xóa" class="remove-item-cart fa fa-remove">&nbsp;</a>
+                                           <b> 350.000₫</b>
+                                           <div class="shopping-cart__content-quantity">
+                                              <button>+</button><input value="1"/><button>-</button>
+                                           </div>
+                                      </div>
+                                      <div class="clear-fix"></div>
+                                  </div>
+                                  <div class="shopping-cart__item">
+                                      <div class="shopping-cart__image">
+                                        <a href=""><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg" alt="" /></a> 
+                                      </div>
+                                      <div class="shopping-cart__content">
+                                         <a href=""><span> Thực phẩm chức năng  Milaganics </span> </a>  
+                                           <a href="javascript:;" title="Xóa" class="remove-item-cart fa fa-remove">&nbsp;</a>
+                                           <b> 350.000₫</b>
+                                           <div class="shopping-cart__content-quantity">
+                                              <button>+</button><input value="1"/><button>-</button>
+                                           </div>
+                                      </div>
+                                      <div class="clear-fix"></div>
+                                  </div>
+                                  <div class="shopping-cart__item">
+                                      <div class="shopping-cart__image">
+                                        <a href=""><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg" alt="" /></a> 
+                                      </div>
+                                      <div class="shopping-cart__content">
+                                         <a href=""><span> Thực phẩm chức năng  Milaganics </span> </a>  
+                                           <a href="javascript:;" title="Xóa" class="remove-item-cart fa fa-remove">&nbsp;</a>
+                                           <b> 350.000₫</b>
+                                           <div class="shopping-cart__content-quantity">
+                                              <button>+</button><input value="1"/><button>-</button>
+                                           </div>
+                                      </div>
+                                      <div class="clear-fix"></div>
+                                  </div>
+                                  <div class="shopping-cart__item">
+                                      <div class="shopping-cart__image">
+                                        <a href=""><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg" alt="" /></a> 
+                                      </div>
+                                      <div class="shopping-cart__content">
+                                         <a href=""><span> Thực phẩm chức năng  Milaganics </span> </a>  
+                                           <a href="javascript:;" title="Xóa" class="remove-item-cart fa fa-remove">&nbsp;</a>
+                                           <b> 350.000₫</b>
+                                           <div class="shopping-cart__content-quantity">
+                                              <button>+</button><input value="1"/><button>-</button>
+                                           </div>
+                                      </div>
+                                      <div class="clear-fix"></div>
+                                  </div>
+                                  <div class="shopping-cart__item">
+                                      <div class="shopping-cart__image">
+                                        <a href=""><img src="https://bizweb.dktcdn.net/thumb/compact/100/299/769/products/12-cab62555-6701-4ca8-9970-14bec586ffa2-f7d9543d-37bc-45db-bcc5-ef437aab4c04-904c052d-633d-4180-8409-8d71cf104a69.jpg" alt="" /></a> 
+                                      </div>
+                                      <div class="shopping-cart__content">
+                                         <a href=""><span> Thực phẩm chức năng  Milaganics </span> </a>  
+                                           <a href="javascript:;" title="Xóa" class="remove-item-cart fa fa-remove">&nbsp;</a>
+                                           <b> 350.000₫</b>
+                                           <div class="shopping-cart__content-quantity">
+                                              <button>+</button><input value="1"/><button>-</button>
+                                           </div>
+                                      </div>
+                                      <div class="clear-fix"></div>
+                                  </div>
+                                </div>
+                               <div class="shopping-cart__total-cart">
+                                    <div class="shopping-cart__total-detail">
+                                         <span> Tổng cộng</span>
+                                         <b>860.000₫</b> 
+                                         <div class="clear-fix"></div>
+                                    </div>
 
+                               </div>
+                               <div class="shopping-cart__button">
+                                 <button> <a href=""> Giỏi hàng</a></button>
+                                 <button> <a href=""> Thanh toán</a></button>
+                               </div>
+                          </div>
+
+                           </div>
+                           
                         </div>
                     </div>
                 </div>
